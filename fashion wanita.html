@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toko Baru </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bcb09f1042.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: montserrat;
+      background: url();
+      background-size: cover;
+      height: 100vh;background-position: center;
+      
+    }
+    nav{
+      background-color: rgba(0, 0, 255, 0.5);
+      height: 80px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+    a.active,a:hover,.turun:hover #menu{
+      background: #1b9bff;
+      transition: .5s;
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+    @media (max-width: 952px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 858px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+    .list-menu{
+      display: none; 
+      position: absolute; 
+      background-color: rgba(0, 0, 255, 0.5);
+      box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .list-menu a{
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+      text-transform: none;
+      line-height: 30px;
+    }
+    .list-menu a:hover {
+      background-color: rgba(0, 0, 255, 0.2);
+      color: white;
+    }
+    .turun:hover .list-menu{
+      display: block;
+    }
+    .gambar{
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: auto;
+      
+    }
+    .gambar .foto img{
+      width: 300px;
+      height: 350px;
+
+    }
+    .foto{
+      border: 1px solid black;
+      margin: 10px;
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      font-family: calibri;
+      
+    }
+    h1{
+      color: black;
+      text-transform: none;
+      font-family: sans-serif;
+      font-size: 25px;
+    }
+    .foto a{
+      border: 1px black;
+      padding: 10px;
+      color: white;
+      background: #333;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo"><i class="fas fa-cart-plus" style="padding: 15px;"></i>Fashion Wanita</label>
+      <ul>
+        <li><a class="" href="index.html"><i class="fas fa-home"></i>     Beranda</a></li>
+        <li class="turun">
+          <a href="kategori baju pria sama wanita.html" class="active" id="menu">Kategori</a>
+            <div class="list-menu">
+              <a href="fashion pria.html">Fashion Pria</a>
+              <a href="fashion wanita.html">Fashion Wanita</a>
+              <a href="Handphone.html">Handphone</a>
+              <a href="Elektronik.html">Elektronik</a>
+            </div>
+        </li>
+        <li><a href="#">Membeli</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+      </ul>
+    </nav>
+
+    <div class="gambar">
+      <div class="foto">
+        <img src="baju blouse.jpg">
+        <h1>Baju Blouse</h1><br>
+        <p>Detail : Bahan Kain Blouse</p>
+        <p>Harga 75.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1a</p>
+        <p>Note :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="baju stelan.jpg">
+        <h1>Baju Setelan</h1><br>
+        <p>Detail : Setelan Korea</p>
+        <p>Harga 150.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1b</p>
+        <p>Note :<br> Harap mencantumkan pilihan ukuran di form pembelian </p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="baju tunik.jpg">
+        <h1>Baju Tunik</h1><br>
+        <p>Detail : Tunik Kotak</p>
+        <p>Harga 145.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1c</p>
+        <p>Note :<br> Harap mencantumkan pilihan ukuran di form pembelian </p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="casio.jpg">
+        <h1>Jam Tangan Casio</h1><br>
+        <p>Detail : Original</p>
+        <p>Harga 600.000</p>
+        <p>Size : - </p>
+        <p>Kode Produk : 1d</p>
+        <p>Note :<br> Warna Tersedia Coklat Muda</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="esprit es1l105l0015.jpg">
+        <h1>Jam Tangan Esprit</h1><br>
+        <p>Detail : Seri ES1l105l0015</p>
+        <p>Harga 900.000</p>
+        <p>Size : - </p>
+        <p>Kode Produk : 1e</p>
+        <p>Note :<br> Warna tersedia Abu - Abu </p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="reebok rd-spr-l2 sparkle run.jpg">
+        <h1>Jam Tangan Reebok </h1><br>
+        <p>Detail : Seri rd-spr-l2 sparkle run</p>
+        <p>Harga 750.000</p>
+        <p>Size : - </p>
+        <p>Kode Produk : 1f</p>
+        <p>NOTE :<br> Warna Tersedia Coklat Tua</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="celana basic scuba.jpg">
+        <h1>Celana Basic</h1><br>
+        <p>Detail : bahan scuba</p>
+        <p>Harga 100.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1g</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="celana kulot.jpg">
+        <h1>Celana Kulot</h1><br>
+        <p>Detail : bahan jeans</p>
+        <p>Harga 150.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1h</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="celana vivi kotak.jpg">
+        <h1>Celana Vivi Kotak</h1><br>
+        <p>Detail : bahan jeans</p>
+        <p>Harga 750.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1i</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="sepatu flat-shoes.jpg">
+        <h1>Flat-Shoes</h1><br>
+        <p>Detail : bahan sepatu yang sangat bagus</p>
+        <p>Harga 250.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1j</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="sepatu bata.jpg">
+        <h1>Sepatu Casual</h1><br>
+        <p>Detail : bahan sepatu yang bagus</p>
+        <p>Harga 450.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1k</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>
+
+      <div class="foto">
+        <img src="sepatu casual.jpg">
+        <h1>Sepatu Sneakers</h1><br>
+        <p>Detail : bahan sepayu yang bagus</p>
+        <p>Harga 750.000</p>
+        <p>Size : ALL Size</p>
+        <p>Kode Produk : 1l</p>
+        <p>NOTE :<br> Harap mencantumkan pilihan ukuran di form pembelian</p><br><br>
+        <a href="">Beli Sekarang</a>
+      </div>      
+
+    </div>
+  </body>
+</html>
