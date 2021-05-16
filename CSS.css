@@ -1,26 +1,17 @@
 .a{
-  font-size: 20pt;
-  font-family: arial black; 
-  text-align: center;
-  background-color: black; 
-  color: yellow}
-.j{
-  font-size: 30pt;
-  font-family: sans-serif; 
-  text-align: center;
-  background-color: black; 
-  color: white; 
-  font-weight: bold;}
-.z{
-  font-size: 20pt;
-  font-family: arial black; 
-  text-align: center;
-  background-color: black; 
-  color: white;
+    font-size: 25pt;
+    height: 120px;
+    font-family: montserrat; 
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.5); 
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
 }
+
 .login {
-  padding: 5em;
-  margin: 0em auto;
-  width: 34em auto;
-  border-radius: 3px;
-}
+    padding: 14em;
+    margin: 0em auto;
+    width: 34em auto;
+    border-radius: 25px;
+  }
