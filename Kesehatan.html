@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <title>Kesehatan</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+             }
+            body{
+                margin: 0;
+                font-family: sans-serif;
+            }
+            nav{
+                background-color: rgba(0, 0, 255, 0.5);
+                height: 80px;
+                width: 100%;
+            }
+            label.logo{
+                color: white;
+                font-size: 35px;
+                line-height: 80px;
+                padding: 20px;
+                font-weight: bold;
+            }
+            nav ul{
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a{
+                color: white;
+                font-size: 17px;
+                padding: 20px;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+            a.active,a:hover,.turun:hover #menu{
+                background: #1b9bff;
+                transition: .5s;
+            }
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+            @media (max-width: 952px){
+                label.logo{
+                    font-size: 30px;
+                    padding-left: 200px;
+                }
+                nav ul li a{
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 858px){
+                .checkbtn{
+                    display: block;
+                }
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #2c3e50;
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                }
+                nav ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                nav ul li a{
+                    font-size: 20px;
+                }
+                a:hover,a.active{
+                    background: none;
+                    color: #0082e6;
+                }
+                #check:checked ~ ul{
+                    left: 0;
+                }
+            }
+            .list-menu{
+                display: none; 
+                position: absolute; 
+                background-color: rgba(0, 0, 255, 0.5);
+                box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .list-menu a{
+                color: white;
+                padding: 12px 16px;
+                display: block;
+                text-align: left;
+                text-transform: none;
+                line-height: 30px;
+            }
+            .list-menu a:hover {
+                background-color: rgba(0, 0, 255, 0.2);
+                color: white;
+            }
+            .turun:hover .list-menu{
+                display: block;
+            }
+            .gambar{
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: auto;
+            }
+            .gambar .foto img{
+                width: 300px;
+            }
+            .foto{
+                border: 1px solid black;
+                margin: 10px;
+                text-align: center;
+            }
+            .foto a{
+                border: 1px solid black;
+                padding: 10px;
+                color: white;
+                background: black;
+                text-decoration: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .footer{
+                text-align: center;
+                margin: 20px;
+                background-color: rgba(0, 0, 255, 0.5);
+                height: 40px;
+                color: white;
+            }
+            .footer p{
+                padding-top: 10px;
+            }
+            .footer a{
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+      
+            <label class="logo"><i class="fas fa-cart-plus" style="padding: 15px;"></i>Kesehatan</label>
+            <ul>
+              <li><a class="" href="index.html"><i class="fas fa-home"></i>Beranda</a></li>
+              <li class="turun">
+                <a href="kategori baju pria sama wanita.html" class="active" id="menu">Kategory</a>
+                  <div class="list-menu">
+                    <a href="fashion pria.html">Fashion Pria</a>
+                    <a href="fashion wanita.html">Fashion Wanita</a>
+                    <a href="PerkapBayiAnak.html">Perlengkapan Bayi & Anak</a>
+                    <a href="Kesehatan.html">Kesehatan</a>
+                    <a href="Handphone.html">Hanphone</a>
+                    <a href="Elektronik.html">Elektronik</a>
+                  </div>
+              </li>
+              <li><a href="#">Membeli</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+            </ul>
+          </nav>
+        <div class="gambar">
+            <div class="foto">
+                <img src="Masker4d.jpg">
+                <h1>Masker 4D</h1>
+                <p>
+                    Harga : Rp 200.000 <br>
+                    Detail : Bahan yang lembut dan nyaman untuk digunakan terdiri dari 3 lapisan bahan termasuk 
+                    filter bakteri yang dapat menyaring partikel partikel halus yg berbahaya bagi kesehatan, Desain 
+                    4 dimensi yang lebih proposional sehingga sangat pas dengan bentuk wajah penutup samping yang menutup 
+                    wajah dengan sempurna, bagian depan yang lebih luas membuat pengguna dapat bernafas lebih lega <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Duckbill.jpg">
+                <h1>Masker Duckbill</h1>
+                <p>
+                    Harga : Rp 165.000 <br>
+                    Detail : <br>
+                    Isi: 50 Masker / Kotak <br>
+                    1.) 95% filtration of 3µm particles <br>
+                    2.) Reduces exposure to blood and body fluids <br>
+                    3.) Minimizes patient contamination to exhaled microorganisms <br>
+                    4.) Form-fit design for a secure fit <br>
+                    5.) Soft non-latex earloop <br>
+
+                    <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Termometer.jpg">
+                <h1>Termometer Inframed</h1>
+                <p>
+                    Harga : Rp 150.000 <br>
+                    Detail : Model Number:YK-TE808 <br>
+                    Item Type: Thermometers <br>
+                    Use Location: Forehead, ear, object <br>
+                    Way of working: Infrared <br>
+                    Level: Medical <br>
+                    For People: Baby Adult child <br>
+                    Display: LCD Digital <br>
+                    Alarm function: Three-color alarm <br>
+                    Operating mode: Human body and objects <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="HandSanitizer.jpg">
+                <h1>Hand Sanitizer</h1>
+                <p>
+                    Harga : Rp 25.000 <br>
+                    Detail : Hand sanitizer membersihkan, <br>
+                    merawat dan melindungi kulit. <br>
+                    Dengan kandungan ekstrak tumbuh-tumbuhan <br>
+                    menyejukkan Chamomile, Cotton dan Bamboo. <br>
+                    Pemakaian: Ambil produk pada telapak tangan, <br>
+                    gosok tangan bersamaan. <br>
+                    Active: 70% Alcohol <br>
+                    <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Timbangan.jpg">
+                <h1>Timbangan Badan</h1>
+                <p>
+                    Harga : Rp 185.000 <br>
+                    Detail : <br>
+                    LCD Display
+                    Memiliki layar LCD 75mm x 30mm sebagai penunjuk angka,<br>
+                    dengan Digital LED untuk menunjukkan angka, suhu, dan kondisi baterai. <br>
+                    Dapat mengukur berat badan hingga 180kg. <br>
+                    Menggunakan 2 buah baterai AAA <br>
+                    High Quality Material <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Masker.jpg">
+                <h1>Masker</h1>
+                <p>
+                    Harga : Rp 60.000
+                    Detail : Softies Surgical Mask dengan 3 lapis <br>
+                    filter berfungsi untuk melindungi dari mikroorganisme <br>
+                    (bakteri/kuman) dan partikel mikro lainnya. <br>
+                    Masker dilengkapi dengan 96% filter, <br>
+                    teruji klinis dapat menyaring bakteri. <br>
+                    Masker dengan bahan lebih lembut dan lebih pas di hidung. <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="MonitorGD.jpg">
+                <h1>Alat Monitor Gula Darah</h1>
+                <p>
+                    Harga : Rp 235.000 <br>
+                    Detail : <br>
+                    - Hasil AKURAT (ISO 15197-2013)	<br>
+                    - Monitor Perkembangan Hasil Melalui Ponsel Pintar 	<br>
+                    - Hasil Pengukuran yang CEPAT (5 detik)	<br>
+                    - Sampel Darah yang Sedikit (0,5 micro-liter) <br>	
+                    - Mengirimkan Hasil Melalui Email atau SMS 	<br>
+                    - Elvasense Smart terhubung dengan Ponsel Android dan iOS <br>
+                    Notes	: Kit tidak termasuk ponsel pintar <br>
+                    <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Tensimeter.jpg">
+                <h1>Tensimeter</h1>
+                <p>
+                    Harga : Rp 200.000 <br>
+                    Detail : <br>
+                    - Voice : YES <br>
+                    - Power : 2 X AAA Battery <br>
+                    - Memory array: 99 set of storage <br>
+                    - Measuring Range: 0-280mmHg <br>
+                    - Pulse rate range (40-199)times/min <br>
+                    - Accuracy: ±3mmHg <br>
+                    Alat ini berfungsi untuk mengetahui detak <br>
+                    jantung dan tekanan darah manusia. <br>
+                    Digunakan dengan cara memasang alat <br>
+                    sphygmomanometer ini pada lengan <br>
+                    tangan dan alat ini akan membaca 
+                    tekanan darah secara perlahan <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="AlatBekam.jpg">
+                <h1>Alat Bekam</h1>
+                <p>
+                    Harga : Rp 640.000
+                    Detail : Alat Bekam merek Sammora isi 30 Premium. Produk berkwalitas dan original dari negeri ginseng,Korea Selatan.
+                    Keunggulan Produk Kop Angin Sammora dengan kop angin Lain nya :                    
+                    Eksklusif bag tempat pemyimpanan peralatan untuk semua tipe terbuat dari plastik yang tebal dan kancing yang eksklusif.
+                    Design pompa vakum yang efisien. Perbandingkan penarikan pompa vakum dengan produk lain perbandingannya adalah 2 dengan 3.
+                    Tempat penyusunan peralatan didalamnya terbuat dari plastik dan sesuai dengan ukuran masing masing peralatan.
+                    Mangkok kop yang lebih tahan lama dibandingkan dengan produk lain. <br>
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 - <a href="">SiniBelanjaYuk</a></p>
+        </div>
+    </body>
+</html>

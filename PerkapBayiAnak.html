@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <title>Perlengkapan Bayi & Anak</title>
+        <style>
+             *{
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+             }
+            body{
+                margin: 0;
+                font-family: sans-serif;
+            }
+            nav{
+                background-color: rgba(0, 0, 255, 0.5);
+                height: 80px;
+                width: 100%;
+            }
+            label.logo{
+                color: white;
+                font-size: 35px;
+                line-height: 80px;
+                padding: 20px;
+                font-weight: bold;
+            }
+            nav ul{
+                float: right;
+                margin-right: 20px;
+            }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            nav ul li a{
+                color: white;
+                font-size: 17px;
+                padding: 20px;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+            a.active,a:hover,.turun:hover #menu{
+                background: #1b9bff;
+                transition: .5s;
+            }
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+            @media (max-width: 952px){
+                label.logo{
+                    font-size: 30px;
+                    padding-left: 200px;
+                }
+                nav ul li a{
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 858px){
+                .checkbtn{
+                    display: block;
+                }
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #2c3e50;
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                }
+                nav ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                nav ul li a{
+                    font-size: 20px;
+                }
+                a:hover,a.active{
+                    background: none;
+                    color: #0082e6;
+                }
+                #check:checked ~ ul{
+                    left: 0;
+                }
+            }
+            .list-menu{
+                display: none; 
+                position: absolute; 
+                background-color: rgba(0, 0, 255, 0.5);
+                box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .list-menu a{
+                color: white;
+                padding: 12px 16px;
+                display: block;
+                text-align: left;
+                text-transform: none;
+                line-height: 30px;
+            }
+            .list-menu a:hover {
+                background-color: rgba(0, 0, 255, 0.2);
+                color: white;
+            }
+            .turun:hover .list-menu{
+                display: block;
+            }
+            .gambar{
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: auto;
+            }
+            .gambar .foto img{
+                width: 300px;
+            }
+            .foto{
+                border: 1px solid black;
+                margin: 10px;
+                text-align: center;
+            }
+            .foto a{
+                border: 1px solid black;
+                padding: 10px;
+                color: white;
+                background: black;
+                text-decoration: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .footer{
+                text-align: center;
+                margin: 20px;
+                background-color: rgba(0, 0, 255, 0.5);
+                height: 40px;
+                color: white;
+            }
+            .footer p{
+                padding-top: 10px;
+            }
+            .footer a{
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+      
+            <label class="logo"><i class="fas fa-cart-plus" style="padding: 15px;"></i>Perlengkapan Bayi & Anak</label>
+            <ul>
+              <li><a class="" href="index.html"><i class="fas fa-home"></i>Beranda</a></li>
+              <li class="turun">
+                <a href="kategori baju pria sama wanita.html" class="active" id="menu">Kategory</a>
+                  <div class="list-menu">
+                    <a href="fashion pria.html">Fashion Pria</a>
+                    <a href="fashion wanita.html">Fashion Wanita</a>
+                    <a href="PerkapBayiAnak.html">Perlengkapan Bayi & Anak</a>
+                    <a href="Kesehatan.html">Kesehatan</a>
+                    <a href="Handphone.html">Hanphone</a>
+                    <a href="Elektronik.html">Elektronik</a>
+                  </div>
+              </li>
+              <li><a href="#">Membeli</a></li>
+              <li><a href="#">Tentang Kami</a></li>
+            </ul>
+          </nav>
+        <div class="gambar">
+        
+            <div class="foto">
+                <img src="BabyVictory.jpg">
+                <h1>Baby Victory</h1>
+                <p>
+                    DETAIL: Bahan cott combed 24s <br>
+                    HARGA : Rp 125.000 <br>
+                    SIZE : size M  & size L  <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Piyama.jpg">
+                <h1>Piyama</h1>
+                <p>
+                    DETAIL : Bahan Adem <br>
+                    HARGA : Rp 70.000 <br>
+                    SIZE : All Size <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="SleepSuit.jpg">
+                <h1>SleepSuit</h1>
+                <p>
+                    DETAIL : Bahan katun dengan kualitas premium <br>
+                    HARGA : Rp 198.000 <br>
+                    SIZE : All Size <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="BabySetLengan.jpg">
+                <h1>Baby Set Lengan</h1>
+                <p>
+                    DETAIL : Bahan lembut <br>
+                    HARGA : Rp 69.000 <br>
+                    SIZE : 0-3M, 3-6M, 6-12M, 1Y, 2Y <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="KaosAnak.jpg">
+                <h1>Kaos Anak</h1>
+                <p>
+                    DETAIL : Bahan cotton combed 24s <br>
+                    HARGA : Rp 45.000 <br>
+                    SIZE : 2Y, 4Y, 6Y, 8Y, 10Y, 12Y <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="IceCreamDress.jpg">
+                <h1>Ice Cream Dress</h1>
+                <p>
+                    DETAIL : Available for kids and Mommy  <br>
+                    HARGA : Rp 175.000 <br>
+                    SIZE : S, M, dan L <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="Prewalker.jpg">
+                <h1>Kaos Kaki Prewalker</h1>
+                <p>
+                    DETAIL : Untuk Bayi  <br>
+                    HARGA :  Rp 10.000 <br>
+                    SIZE : 11cm, 12cm, dan 13cm <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="SneakerLED.jpg">
+                <h1>Sneaker Anak LED</h1>
+                <p>
+                    DETAIL :Sepatu LED Light  <br>
+                    HARGA : Rp 127.000 <br>
+                    SIZE : 21,22,23,24,25,26,27,28,29,30 <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+            <div class="foto">
+                <img src="RanselAnak.jpg">
+                <h1>Ransel Anak</h1>
+                <p>
+                    DETAIL :Material Poliester  <br>
+                    HARGA : Rp 60.000 <br>
+                    SIZE : 20cm (p) x 25cm (t) x 5cm (l) <br>
+                    NOTE : Harap Cantumkan Pilihan Ukuran di Catatan Pembeli <br>
+
+                    <br>
+                </p>
+                <a href="">Beli Sekarang</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2021 - <a href="">SiniBelanjaYuk</a></p>
+        </div>
+    </body>
+</html>
